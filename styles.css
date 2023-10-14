@@ -84,12 +84,15 @@ video {
     height: auto;
 }
 
+
+
 .businessCardContent p{
     margin: 0;
     padding: 0;
     width: fit-content;
-    scale: 0.7;
 }
+
+
 
 .businnesCardConnectSection a{
     width: 10px;
@@ -103,6 +106,8 @@ video {
     opacity: 0.7;
     scale: 1.05;
 }
+
+
 
 /* backgrounds */
 .GitHub{
@@ -150,3 +155,6 @@ video {
     background-color: #fff;
 }
 
+.businessCardContent, .businnesCardConnectSection, .businessCardSkills{
+    scale: 0.7;
+}
