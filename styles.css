@@ -49,8 +49,28 @@ video {
     z-index: 2;
 }
 
-.heroContent1:hover{
-    content: 'Christo John';
+.heroSpecial{
+    display: inline;
+    width: 13vw !important;
+}
+
+/* .heroTesnicc{
+    width: 3vw;
+    text-align: center;
+}
+
+.heroTesnic:hover{
+    display: none;
+} 
+
+.HeroChristo:hover{
+    display: inline;
+}
+
+*/
+
+.web-dev{
+    letter-spacing: 0.5rem;
 }
 
 .businessCard{
@@ -64,54 +84,51 @@ video {
     transition: scale 0.7s;
 }
 
-.businessCard:hover{
-    scale: 1.1;
-}
 
-.heroContent p, .businessCardImg , .businessCardSection1 .businessCardContent p, .businessCardSkills p{
+.businessCardImg , .businessCardSection1 .businessCardContent p, .businessCardSkills p, .name{
     transition: scale 0.4s;
 }
 
-.heroContent p:hover, .businessCardImg:hover,.businessCardContent p:hover, .businessCardSkills p:hover{
+.businessCardImg:hover,.businessCardContent p:hover, .businessCardSkills p:hover, .name{
     scale: 0.9;
 }
-
 
 .businessCardImg{
     padding: 0 !important;
     margin: 0 !important;
-    width: 15vw;
+    width: 25vw;
+    max-width: 200px;
+    object-fit: cover;
     height: auto;
 }
 
 
 
+
 .businessCardContent p{
-    margin: 0;
-    padding: 0;
     width: fit-content;
 }
 
 
 
 .businnesCardConnectSection a{
-    width: 10px;
-    height: 10px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-size: cover;
     transition: opacity 0.2s, border 0.1s, scale 0.3s;
 }
 .businnesCardConnectSection a:hover{
     border: 2px solid greenyellow;
     opacity: 0.7;
-    scale: 1.05;
+    scale: 1.9;
+    border-radius: 5px;
 }
 
 
 
 /* backgrounds */
 .GitHub{
-    background: url(assets/img/GitHub.png) ;   
+    background: url(assets/img/GitHub.png);   
     background-size: cover;
 }
 
@@ -155,6 +172,6 @@ video {
     background-color: #fff;
 }
 
-.businessCardContent, .businnesCardConnectSection, .businessCardSkills{
+.businessCardContent, .businnesCardConnectSection{
     scale: 0.7;
 }
