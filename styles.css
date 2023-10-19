@@ -23,30 +23,53 @@ body{
     height: 100vh;
 }
 
-.heroBrandImg{
+.heroBrandImgLg{
     border: 1px ridge aqua;
     box-shadow: 0 0 5px lightblue;
-    border-radius: 50%;
     width: 25vw;
+    height: 25vw;
     transition: box-shadow 0.5s, scale 0.4s;
+    opacity: 0.7;
+    background-image: url(assets/img/tesnic.ioBrand.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
 }
 
-.heroBrandImg:hover{
-    box-shadow: 0 0 7px 2px rgba(255, 0, 0, 0.405);
+.heroBrandImgSm{
+    border: 1px ridge aqua;
+    box-shadow: 0 0 5px lightblue;
+    width: 40vw;
+    height: 40vw;
+    transition: box-shadow 0.5s, scale 0.4s;
+    opacity: 0.7;
+    background-image: url(assets/img/tesnic.ioBrand.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+
+.heroBrandImgLg:hover, .heroBrandImgSm:hover{
+    box-shadow: 0 0 7px 5px #000,0 0 1px 5px rgb(255, 0, 0);
     scale: 1.1;
 }
 
-video {
+/* video {
     object-fit: cover;
     object-position: center;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-}
+} */
 
 .heroContent{
     position: absolute;
     z-index: 2;
+    object-fit: cover;
+    object-position: center;
+    width: 100vw;
+    height: 100vh;
+
 }
 
 .heroSpecial{
@@ -82,14 +105,16 @@ video {
     width: fit-content;
     height: fit-content;
     transition: scale 0.7s;
+    padding-bottom: 50vw;
+    
 }
 
 
 .businessCardImg , .businessCardSection1 .businessCardContent p, .businessCardSkills p, .name{
-    transition: scale 0.4s;
+    transition: all 0.4s;
 }
 
-.businessCardImg:hover,.businessCardContent p:hover, .businessCardSkills p:hover, .name{
+.businessCardImg:hover,.businessCardContent p:hover, .businessCardSkills p:hover{
     scale: 0.9;
 }
 
@@ -100,9 +125,13 @@ video {
     max-width: 200px;
     object-fit: cover;
     height: auto;
+    opacity: 0.7;
 }
 
-
+.name:hover{
+    color: aquamarine;
+    letter-spacing: 0.2rem;
+}
 
 
 .businessCardContent p{
@@ -114,13 +143,13 @@ video {
 .businnesCardConnectSection a{
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    transition: opacity 0.2s, border 0.1s, scale 0.3s;
+    border-radius: 25%;
+    transition: opacity 0.2s, border 0.1s, scale 0.5s;
 }
 .businnesCardConnectSection a:hover{
     border: 2px solid greenyellow;
     opacity: 0.7;
-    scale: 1.9;
+    scale: 1.5;
     border-radius: 5px;
 }
 
@@ -162,16 +191,98 @@ video {
     background-size: cover;
 }
 
-
-
-.businessCardSkills p .skillIcon{
-    width: 50px;
-    height: 30px !important;
-    border-radius: 50%;
-    background-size: contain;
-    background-color: #fff;
+.w3Schools{
+    
+    background: url(assets/img/w3Schools.png);
+    background-size: cover;
 }
 
-.businessCardContent, .businnesCardConnectSection{
+.unrealEngine{
+    
+    background: url(assets/img/unrealEngine.png);
+    background-size: cover;
+}
+
+.nodeJs{
+    
+    background: url(assets/img/nodeJs.jpg);
+    background-size: cover;
+}
+
+.businessCardSection1-1{
+    background-color: #e6e3e33c;
+    width: fit-content;
+}
+
+
+.businessCardContennt, .businnesCardConnectSection{
     scale: 0.7;
+}
+
+.bussCardSupSec1{
+    width: 97vw;
+}
+
+.bussCardSupSec2{
+    float: right;
+    border: 2px ridge aqua;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 5px;
+    max-height: 42px;
+}
+.bussCardSupSec2:hover{
+    animation: anime1 4s ease-in-out infinite;
+}
+
+ .skillIcon{
+    width: 30px;
+    height: 30px !important;
+    background-size: cover;
+    background-color: #fff;
+    transition: all 0.7s;
+}
+
+@keyframes anime1{
+
+    0%{
+        box-shadow: 0 0 1px 1px #000,0 0 0px 1px #fff;
+    }
+
+    25%{  
+        box-shadow: 0 0 7px 5px #000,0 0 1px 5px #fff;
+    }
+
+    50%{
+        box-shadow: 0 0 1px 1px #000,0 0 5px 1px #fff;
+    }
+
+    75%{
+        box-shadow: 0 0 9px 5px #000,0 0 1px 5px yellowgreen;
+    }
+
+    100%{
+            box-shadow: 0 0 1px 1px #000,0 0 0px 1px #fff;
+    }
+}
+
+@keyframes scaleAnime{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 0.9;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.bodyBg{
+    background: url(assets/img/bodyBg2.gif);
+    background-position: center;
+    background-size: cover;
 }
