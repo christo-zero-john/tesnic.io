@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
+/* backgroundFixed */
+.heroBg, .businessCard, .aboutMe, .businessCardSection1-1{
+    background-attachment: fixed;
+}
+
 
 body{
     background: url(assets/img/bodybg.gif);
@@ -10,13 +17,12 @@ body{
     background-repeat: repeat;
 }
 
-.bodyBg{
-    position: fixed;
-    z-index: -1;
-    object-fit: fill;
-    background-color: #000;
-    
+.heroBg{
+    background-image: url(assets/img/bodyBg2.gif);
+    background-position: center;
+    background-size: cover;
 }
+
 
 .hero{
     width: 100vw;
@@ -62,6 +68,15 @@ body{
     z-index: 1;
 } */
 
+.HeroText{
+    opacity: 0.7;
+}
+
+.heroSpecial{
+    opacity: 1;
+}
+
+
 .heroContent{
     position: absolute;
     z-index: 2;
@@ -97,7 +112,7 @@ body{
 }
 
 .businessCard{
-    background: url(assets/img/businessCardBg.jpg);
+    background-image: url(assets/img/businessCardBg.jpg);
     background-size: cover;
     color: wheat;
     padding: 0;
@@ -211,11 +226,11 @@ body{
 
 .businessCardSection1-1{
     background-color: #e6e3e33c;
-    width: 95.5%;
+    width: 92.5%;
 }
 
 
-.businessCardContennt, .businnesCardConnectSection{
+.businnesCardConnectSection{
     scale: 0.7;
 }
 
@@ -234,11 +249,12 @@ body{
     bottom: 5px;
     max-height: 42px;
 }
+
 .bussCardSupSec2:hover{
-    animation: anime1 4s ease-in-out infinite;
+    animation: anime1 0.2s ease-in-out forwards;
 }
 
- .skillIcon{
+.skillIcon{
     width: 30px;
     height: 30px !important;
     background-size: cover;
@@ -281,8 +297,27 @@ body{
     }
 }
 
-.bodyBg{
-    background: url(assets/img/bodyBg2.gif);
-    background-position: center;
-    background-size: cover;
+
+
+/* AboutMe */
+.aboutMe{
+    background-attachment: fixed;
+}
+
+.whoAmI{
+    letter-spacing: 0.1rem;
+    color: #fff;
+}
+
+.whoAmI:hover{
+    color: aqua;
+}
+
+.whoAmIPara, .whoAmI{
+    transition: all 0.7s;
+}
+
+.whoAmIPara:hover{
+    scale: 0.8;
+    letter-spacing: 0.3rem;
 }
