@@ -1,5 +1,157 @@
 /* font imports */
-  @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Iceland&family=Oxanium:wght@200;300;400;500;600;700;800&family=Sirin+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Iceland&family=Oxanium:wght@200;300;400;500;600;700;800&family=Sirin+Stencil&display=swap');
+
+/* Common */
+/* widths */
+.wd-100{
+    min-width: 100vw;
+  }
+  
+  .wd-75{
+    min-width: 75vw;
+  }
+  
+  .wd-50{
+    min-width: 50vw;
+  }
+  
+  .wd-25{
+    min-width: 25vw;
+  }
+  
+  .wd-10{
+    min-width: 10vw;
+  }
+  
+  
+  .wd-20{
+    min-width:20vw;
+  }
+  
+  .wd-30{
+    min-width: 30vw;
+  }
+  
+  .wd-40{
+    min-width: 40vw;
+  }
+  
+  .wd-50{
+    min-width: 50vw;
+  }
+  
+  .wd-60{
+    min-width: 60vw;
+  }
+  
+  .wd-70{
+    min-width: 70vw;
+  }
+  
+  .wd-80{
+    min-width: 80vw;
+  }
+  
+  .wd-90{
+    min-width: 90vw;
+  }
+  
+  
+  .w-fit{
+    min-width: fit-content;
+  }
+  
+  /* heights */
+  .hd-100{
+    min-height: 100vw;
+  }
+  
+  .hd-75{
+    min-height: 75vw;
+  }
+  
+  .hd-50{
+    min-height: 50vw;
+  }
+  
+  .hd-25{
+    min-height: 25vw;
+  }
+  
+  .hd-10{
+    min-height: 10vw;
+  }
+  
+  .hd-20{
+    min-height:20vw;
+  }
+  
+  .hd-30{
+    min-height: 30vw;
+  }
+  
+  .hd-40{
+    min-height: 40vw;
+  }
+  
+  .hd-50{
+    min-height: 50vw;
+  }
+  
+  .hd-60{
+    min-height: 60vw;
+  }
+  
+  .hd-70{
+    min-height: 70vw;
+  }
+  
+  .hd-80{
+    min-height: 80vw;
+  }
+  
+  .hd-90{
+    min-height: 90vw;
+  }
+  
+  .h-fit{
+    min-height: fit-content;
+  }
+  
+  
+  /* font-weights */
+  .fw-100{
+      font-weight: 100 !important;
+  }
+  .fw-200{
+      font-weight: 200 !important;
+  }
+  .fw-300{
+      font-weight: 300 !important;
+  }
+  .fw-400{
+      font-weight: 400 !important;
+  }
+  .fw-500{
+      font-weight: 500 !important;
+  }
+  .fw-600{
+      font-weight: 600 !important;
+  }
+  .fw-700{
+      font-weight: 700 !important;
+  }
+  .fw-800{
+      font-weight: 800 !important;
+  }
+  .fw-900{
+      font-weight: 900 !important;
+  }
+  .fw-1000{
+      font-weight: 1000 !important;
+  }
+
+
 
   /* fonts */
   .en-iceberg{
@@ -30,6 +182,22 @@
     background-attachment: fixed;
 }
 
+#loadingDiv{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: url(assets/img/loadingAnime.gif);
+    background-position: center;
+    background-size: cover;
+    z-index: 10;
+}
+
+#loadingDiv p{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+
 
 body{
     background: url(assets/img/bodybg.gif);
@@ -41,6 +209,7 @@ body{
     background-image: url(assets/img/bodyBg2.gif);
     background-position: center;
     background-size: cover;
+    background-position: center;
 }
 
 
@@ -58,6 +227,7 @@ body{
     opacity: 0.7;
     background-image: url(assets/img/tesnic.ioBrand.jpg);
     background-size: cover;
+    background-position: center;
     border-radius: 10px;
     border-bottom-left-radius: 0;
 }
@@ -71,12 +241,13 @@ body{
     opacity: 0.7;
     background-image: url(assets/img/tesnic.ioBrand.jpg);
     background-size: cover;
+    background-position: center;
     border-radius: 10px;
     border-bottom-left-radius: 0;
 }
 
 .heroBrandImgLg:hover, .heroBrandImgSm:hover{
-    box-shadow: 0 0 7px 5px #000,0 0 1px 5px rgb(255, 0, 0);
+    box-shadow: 0 0 7px 5px #000,0 0 1px 5px #ff0000;
     scale: 1.1;
 }
 
@@ -89,7 +260,15 @@ body{
 } */
 
 .HeroText{
-    opacity: 0.7;
+    transition: all 0.5s;
+    color: #fff;
+}
+
+.HeroText:hover{
+    scale: 0.9;
+    letter-spacing: 0.2rem;
+    color: #00ffbb;
+    
 }
 
 .heroSpecial{
@@ -112,28 +291,29 @@ body{
     width: 13vw !important;
 }
 
-/* .heroTesnicc{
-    width: 3vw;
-    text-align: center;
+
+.heroTesnic{
+    transition: all 1s;
 }
 
 .heroTesnic:hover{
-    display: none;
-} 
-
-.HeroChristo:hover{
-    display: inline;
+    color: transparent;
+    text-shadow: 0 0 2px #fff;
 }
-
-*/
 
 .web-dev{
     letter-spacing: 0.5rem;
+    transition: all 1s;
+}
+.web-dev:hover{
+    box-shadow: 0 0 7px 5px #000,0 0 1px 5px #00ffbb;
+    background-color: transparent;
 }
 
 .businessCard{
     background-image: url(assets/img/businessCardBg.jpg);
     background-size: cover;
+    background-position: center;
     color: wheat;
     padding: 0;
     margin: 0;
@@ -194,54 +374,85 @@ body{
 .GitHub{
     background: url(assets/img/GitHub.png);   
     background-size: cover;
+    background-position: center;
 }
 
 .MuLearn{
     background: url(assets/img/MuLearn.png);
     background-size: cover;
+    background-position: center;
 }
 
 .LinkedIn{
     background: url(assets/img/linkedin.png);
     background-size: cover;
+    background-position: center;
 }
 
 .Instagram{
     background: url(assets/img/instagram.png);
     background-size: cover;
+    background-position: center;
 }
 
 .HTML{
     background: url(assets/img/html.png);
     background-size: cover;
+    background-position: center;
 }
 
 .CSS{
     background: url(assets/img/css.png);
     background-size: cover;
+    background-position: center;
 }
 
 .JavaScript{
     background: url(assets/img/javascript.png);
     background-size: cover;
+    background-position: center;
 }
 
 .w3Schools{
     
     background: url(assets/img/w3Schools.png);
     background-size: cover;
+    background-position: center;
 }
 
 .unrealEngine{
     
     background: url(assets/img/unrealEngine.png);
     background-size: cover;
+    background-position: center;
 }
 
 .nodeJs{
     
     background: url(assets/img/nodeJs.jpg);
     background-size: cover;
+    background-position: center;
+}
+
+.facebook{
+    
+    background: url(assets/img/facebook.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.mechArena{
+    
+    background: url(assets/img/mechArena.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.clashOfClans{
+    
+    background: url(assets/img/clashOfClans.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .businessCardSection1-1{
@@ -279,6 +490,7 @@ body{
     width: 30px;
     height: 30px !important;
     background-size: cover;
+    background-position: center;
     background-color: #fff;
     transition: all 0.7s;
 }
@@ -324,6 +536,7 @@ body{
 .aboutMe{
     background-attachment: fixed;
     scale: 0.9;
+    transition: all 0.5s;
 }
 
 .whoAmI{
@@ -355,8 +568,37 @@ body{
 }
 
 .whoAmIParaLong:hover{
-    
-    scale: 0.6;
+    scale: 0.7;
     letter-spacing: 0.3rem;
 
+}
+
+/* MyProjects */
+.MyProjects{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/comingSoon.gif);
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+}
+
+/* FindMe */
+
+.FindMe{
+    background-image: url(assets/img/findMeBg.gif);
+    background-size: cover;
+    background-position: center;
+}
+.FindMeItems a{
+    width: 30px;
+    height: 30px;
+    border-radius: 25%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.FindMeItems a:hover{
+    scale: 1.5;
 }
