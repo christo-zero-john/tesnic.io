@@ -302,6 +302,7 @@ body{
 /* AboutMe */
 .aboutMe{
     background-attachment: fixed;
+    scale: 0.8;
 }
 
 .whoAmI{
@@ -311,10 +312,12 @@ body{
 
 .whoAmI:hover{
     color: aqua;
+    scale: 1.01;
+    letter-spacing: 0.1rem;
 }
 
 .whoAmIPara, .whoAmI{
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 
 .whoAmIPara:hover{
