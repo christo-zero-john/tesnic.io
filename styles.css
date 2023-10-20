@@ -1,3 +1,23 @@
+/* font imports */
+  @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Iceland&family=Oxanium:wght@200;300;400;500;600;700;800&family=Sirin+Stencil&display=swap');
+
+  /* fonts */
+  .en-iceberg{
+    font-family: 'Iceberg', sans-serif;
+  }
+
+  .en-iceland{
+    font-family: 'Iceland', sans-serif;
+  }
+
+  .en-oxanium{
+    font-family: 'Oxanium', sans-serif;
+  }
+
+  .en-sirin{
+    font-family: 'Sirin Stencil', sans-serif;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -248,6 +268,7 @@ body{
     position: absolute;
     bottom: 5px;
     max-height: 42px;
+    border-radius: 5px;
 }
 
 .bussCardSupSec2:hover{
@@ -312,8 +333,8 @@ body{
 
 .whoAmI:hover{
     color: aqua;
-    scale: 1.01;
-    letter-spacing: 0.1rem;
+    scale: 1.1;
+    letter-spacing: 0.3rem;
 }
 
 .whoAmIPara, .whoAmI{
@@ -323,4 +344,19 @@ body{
 .whoAmIPara:hover{
     scale: 0.8;
     letter-spacing: 0.3rem;
+}
+
+.textNoWrap{
+    text-wrap: nowrap;
+}
+
+.whoAmIParaLong{
+    transition: all 0.5s;
+}
+
+.whoAmIParaLong:hover{
+    
+    scale: 0.6;
+    letter-spacing: 0.3rem;
+
 }
