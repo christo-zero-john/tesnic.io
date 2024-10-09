@@ -7,7 +7,7 @@ function BusinessCard() {
         <div className="businessCardSection1  d-flex flex-column justify-content-center align-items-center mx-auto ">
           <div className="businessCardSection1-1 d-flex flex-row justify-content-start align-items-center text-left  ml-4">
             <img
-              src="assets/img/me.jpg"
+              src="/assets/img/me.jpg"
               alt=""
               className="businessCardImg btn btn-outline-success mr-md-5 pb-0"
             />
