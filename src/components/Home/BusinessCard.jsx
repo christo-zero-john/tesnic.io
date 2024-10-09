@@ -1,4 +1,5 @@
 import React from "react";
+import "../../assets/img/me.jpg";
 
 function BusinessCard() {
   return (
