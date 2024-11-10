@@ -14,7 +14,7 @@
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background-image: url(assets/img/loadingAnime.gif);
+    background-image: url(./src/assets/img/loadingAnime.gif);
     background-position: center;
     background-size: cover;
     z-index: 10;
@@ -29,13 +29,13 @@
 
 
 body{
-    background: url(assets/img/bodybg.gif);
+    background: url(./src/assets/img/bodybg.gif);
     background-size: contain;
     background-repeat: repeat;
 }
 
 .heroBg{
-    background-image: url(assets/img/bodyBg2.gif);
+    background-image: url(./src/assets/img/bodyBg2.gif);
     background-position: center;
     background-size: cover;
     background-position: center;
@@ -54,7 +54,7 @@ body{
     height: 25vw;
     transition: box-shadow 0.5s, scale 0.4s;
     opacity: 0.7;
-    background-image: url(assets/img/tesnic.ioBrand.jpg);
+    background-image: url(./src/assets/img/tesnic.ioBrand.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -68,7 +68,7 @@ body{
     height: 40vw;
     transition: box-shadow 0.5s, scale 0.4s;
     opacity: 0.7;
-    background-image: url(assets/img/tesnic.ioBrand.jpg);
+    background-image: url(./src/assets/img/tesnic.ioBrand.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -135,7 +135,7 @@ body{
 }
 
 .businessCard{
-    background-image: url(assets/img/businessCardBg.jpg);
+    background-image: url(./src/assets/img/businessCardBg.jpg);
     background-size: cover;
     background-position: center;
     color: wheat;
@@ -194,71 +194,71 @@ body{
 
 /* backgrounds */
 .GitHub{
-    background: url(assets/img/GitHub.png);   
+    background: url(./src/assets/img/GitHub.png);   
     background-size: cover;
     background-position: center;
 }
 
 .MuLearn{
-    background: url(assets/img/MuLearn.png);
+    background: url(./src/assets/img/MuLearn.png);
     background-size: cover;
     background-position: center;
 }
 
 .LinkedIn{
-    background: url(assets/img/linkedin.png);
+    background: url(./src/assets/img/linkedin.png);
     background-size: cover;
     background-position: center;
 }
 
 .Instagram{
-    background: url(assets/img/instagram.png);
+    background: url(./src/assets/img/instagram.png);
     background-size: cover;
     background-position: center;
 }
 
 .HTML{
-    background: url(assets/img/html.png);
+    background: url(./src/assets/img/html.png);
     background-size: cover;
     background-position: center;
 }
 
 .CSS{
-    background: url(assets/img/css.png);
+    background: url(./src/assets/img/css.png);
     background-size: cover;
     background-position: center;
 }
 
 .JavaScript{
-    background: url(assets/img/javascript.png);
+    background: url(./src/assets/img/javascript.png);
     background-size: cover;
     background-position: center;
 }
 
 .w3Schools{
     
-    background: url(assets/img/w3Schools.png);
+    background: url(./src/assets/img/w3Schools.png);
     background-size: cover;
     background-position: center;
 }
 
 .unrealEngine{
     
-    background: url(assets/img/unrealEngine.png);
+    background: url(./src/assets/img/unrealEngine.png);
     background-size: cover;
     background-position: center;
 }
 
 .nodeJs{
     
-    background: url(assets/img/nodeJs.jpg);
+    background: url(./src/assets/img/nodeJs.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .facebook{
     
-    background: url(assets/img/facebook.png);
+    background: url(./src/assets/img/facebook.png);
     background-size: cover;
     background-position: center;
 }
@@ -385,7 +385,7 @@ body{
 .MyProjects{
     width: 100%;
     height: 100%;
-    background-image: url(assets/img/comingSoon.gif);
+    background-image: url(./src/assets/img/comingSoon.gif);
     background-size: cover;
     background-position: center;
 }
@@ -393,7 +393,7 @@ body{
 /* FindMe */
 
 .FindMe{
-    background-image: url(assets/img/findMeBg.gif);
+    background-image: url(./src/assets/img/findMeBg.gif);
     background-size: cover;
     background-position: center;
 }
