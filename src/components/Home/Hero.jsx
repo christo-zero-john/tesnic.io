@@ -1,11 +1,8 @@
-import React from "react";
-
 function Hero() {
   return (
     <div className=" hero d-flex flex-row justify-content-center align-items-center">
       <div className="heroContent d-flex flex-column justify-content-around align-items-center heroBg">
         <span
-          alt="Tesnic.io Brand Image"
           className="d-none d-md-block heroBrandImgLg img-fluid mb-5"
         ></span>
 
