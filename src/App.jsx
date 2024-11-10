@@ -1,11 +1,12 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "../defaults.css";
 import "../styles.css";
-import Hero from "./components/Home/Hero";
-import BusinessCard from "./components/Home/BusinessCard";
-import AboutMe from "./components/Home/AboutMe";
-import MyProjects from "./components/Home/MyProjects";
-import FindMe from "./components/Home/FindMe";
+import Hero from "./components/Home/hero";
+import BusinessCard from "./components/Home/business-card";
+import AboutMe from "./components/Home/about-me";
+
+import FindMe from "./components/Home/find-me";
+import MyProjects from "./components/my-projects/my-pojects";
 
 function App() {
   return (
