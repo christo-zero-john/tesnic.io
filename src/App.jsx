@@ -1,10 +1,9 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "../defaults.css";
 import "../styles.css";
-import Hero from "./components/Home/hero";
 import BusinessCard from "./components/Home/business-card";
 import AboutMe from "./components/Home/about-me";
-
+import Hero from "./components/Home/hero"
 import FindMe from "./components/Home/find-me";
 import MyProjects from "./components/my-projects/my-pojects";
 
