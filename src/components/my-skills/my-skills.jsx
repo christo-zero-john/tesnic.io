@@ -1,8 +1,7 @@
-import React from 'react'
 
 function MySkills() {
     let mySkills = {
-        frontend: ["HTML", "CSS", "JavaScript", "Bootstrap", "React"];
+        frontend: ["HTML", "CSS", "JavaScript", "Bootstrap", "React"],
         backend: ["Firebase"],
         other: ["GitHub", "Project Management", "Communication"],
     }
