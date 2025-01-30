@@ -1,5 +1,3 @@
-import React from "react";
-
 function AboutMe() {
   return (
     <div className="aboutMe p-2 text-center text-secondary w-100">
